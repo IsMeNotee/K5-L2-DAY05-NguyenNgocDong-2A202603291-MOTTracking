@@ -1,14 +1,11 @@
-# Báo cáo cá nhân — HoVaTen-MSSV
-
-Đổi tên file theo quy tắc `MSSV_HoTen.md`. Ví dụ: `20241234_NguyenVanAn.md`.
-
+# Báo cáo cá nhân — Nguyễn Ngọc Đồng - 2A202603291
 Đoạn video: MOT17-09, 150 frame (frame 1–150), nguồn MOTChallenge, giấy phép CC BY-NC-SA 3.0.
 
 ## 0. Thông tin học viên
 
 - Họ tên: Nguyễn Ngọc Đồng
 - MSSV: 2A202603291
-- Mã đề (A/B/C):
+- Mã đề (A/B/C): B
 - Email: csjbvhfff@gmail.com
 - Link repository: https://github.com/IsMeNotee/K5-L2-DAY05-NguyenNgocDong-2A202603291-MOTTracking
 - Giờ bắt đầu:17h
