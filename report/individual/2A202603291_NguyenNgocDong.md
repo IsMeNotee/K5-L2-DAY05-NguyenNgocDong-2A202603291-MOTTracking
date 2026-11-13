@@ -6,13 +6,13 @@
 
 ## 0. Thông tin học viên
 
-- Họ tên:
-- MSSV:
+- Họ tên: Nguyễn Ngọc Đồng
+- MSSV: 2A202603291
 - Mã đề (A/B/C):
-- Email:
+- Email: csjbvhfff@gmail.com
 - Link repository:
-- Giờ bắt đầu:
-- Giờ kết thúc:
+- Giờ bắt đầu:17h
+- Giờ kết thúc:18h
 
 ## 1. Xem trước đoạn video (CP0)
 
@@ -20,11 +20,11 @@ Ghi **trước khi vẽ**, mỗi người một dòng.
 
 | Mã | Frame xuất hiện | Frame cuối thấy được | Rẽ / dừng / đổi tốc độ ở frame | Bị che ở frame | Ghi chú |
 |---|---|---|---|---|---|
-| P1 | | | | | |
-| P2 | | | | | |
-| P3 | | | | | |
-| P4 | | | | | |
-| P5 | | | | | |
+| P1 | 1 | 200 | di chuyển ra cửa | 33 | hết che frame 53 |
+| P2 | 1 | 200 | đi thẳng | ko bị che | ko có |
+| P3 | 1 | 106 | đứng im | 107 | ko di chuyển |
+| P4 | 1 | 102 | đứng im | 103 | ko di chuyển |
+| P5 | 37 | 200 | đi thẳng | ko bị che | ko có |
 
 ## 2. Keyframe và thời gian (CP1, CP4)
 
