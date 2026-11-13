@@ -10,7 +10,7 @@
 - MSSV: 2A202603291
 - Mã đề (A/B/C):
 - Email: csjbvhfff@gmail.com
-- Link repository:
+- Link repository: https://github.com/IsMeNotee/K5-L2-DAY05-NguyenNgocDong-2A202603291-MOTTracking
 - Giờ bắt đầu:17h
 - Giờ kết thúc:18h
 
@@ -32,41 +32,51 @@ Số keyframe lấy từ kết quả `src/check_submission.py`.
 
 | Mã | Số keyframe | Keyframe ở frame | Số frame có mặt | Keyframe / 100 frame | Thời gian (phút) | Chỗ khó |
 |---|---|---|---|---|---|---|
-| P1 | | | | | | |
-| P2 | | | | | | |
-| P3 | | | | | | |
-| P4 | | | | | | |
-| P5 | | | | | | |
-| **Tổng** | | | | | | |
+| P1 | 22 | 0, 10, 18, 22, 29, 35, 38, 55, 63, 67, 71, 75, 83, 88, 92, 97, 114, 121, 128, 143, 146, 149 | 150 | 14.7 | 15 | Người di chuyển và có nhiều đoạn bị che |
+| P2 | 30 | 0, 9, 18, 29, 38, 45, 48, 51, 58, 63, 67, 79, 83, 88, 92, 97, 101, 105, 111, 114, 118, 121, 124, 128, 132, 137, 140, 143, 146, 149 | 150 | 20.0 | 15 | Người di chuyển, bbox thay đổi vị trí và kích thước |
+| P3 | 6 | 0, 9, 18, 22, 94, 105 | 150 | 4.0 | 15 | Đi gần P4, dễ xảy ra che khuất | Người nhỏ, dễ bị che bởi người khác |
+| P4 | 8 | 0, 9, 18, 22, 38, 39, 105, 110 | 150 | 5.3 | 15 |
+| P5 | 24 | 35, 42, 48, 58, 63, 67, 71, 79, 83, 88, 92, 97, 101, 105, 111, 118, 124, 128, 132, 137, 140, 143, 146, 149 | 115 | 20.9 | 15 | Người xuất hiện muộn, một phần cơ thể ở sát mép ảnh |
 
-Keyframe / 100 frame của cả bài = tổng keyframe ÷ tổng số frame có mặt × 100 = ...
+| **Tổng** | 90 | | 715 | 12.6 | 60 | |
+
+Keyframe / 100 frame của cả bài = tổng keyframe ÷ tổng số frame có mặt × 100 = 90 ÷ 715 × 100 = 12.6
 
 Bạn đặt keyframe nhiều nhất ở người nào? Vì sao (người đó rẽ, dừng, lại gần camera hay bị che)?
 
-...
+Tôi đặt nhiều keyframe nhất ở P2 với 30 keyframe. Người này di chuyển trong khung hình, khiến vị trí và kích thước bounding box thay đổi. Tôi bổ sung keyframe khi nội suy không còn bám sát người để cải thiện độ chính xác
 
 ## 3. Đoạn bị che (CP2)
 
-Người bị che: `P_`
+Người bị che: `P1`
 
 | Mốc | Frame |
 |---|---:|
-| Bắt đầu bị che một phần (bật `occluded`) | |
-| Mất hẳn (bật `outside`) | |
-| Hiện lại (tắt `outside`) | |
-| Thấy rõ trở lại (tắt `occluded`) | |
+| Bắt đầu bị che một phần (bật `occluded`) | 33 |
+| Mất hẳn (bật `outside`) | 40 |
+| Hiện lại (tắt `outside`) | 53 |
+| Thấy rõ trở lại (tắt `occluded`) | 57 |
 
-- Thời gian khuất hẳn: ___ frame = ___ giây.
-- Quyết định: giữ cùng ID / tạo track mới.
+- Thời gian khuất hẳn: 13 frame = 5 giây.
+- Quyết định: giữ cùng ID
 - Lý do (trả lời 3 câu: khuất bao lâu so với 60 frame, ngoại hình có khớp, chỗ hiện lại có đúng hướng và tốc độ):
-
-...
++ Khuất 13 frame
++ Ngoại hình khớp
++ Gần như ko thay dodỏi hướng và tốc độ
 
 Ảnh chụp màn hình:
 
 ![Trước khi che](images/che_1_truoc.png)
+<img width="1363" height="703" alt="image" src="https://github.com/user-attachments/assets/2d1f3f1a-0474-4f92-9aca-d7dde8b5efd5" />
+
+
 ![Giữa đoạn che, thấy cờ trên panel object](images/che_2_giua.png)
+<img width="1360" height="695" alt="image" src="https://github.com/user-attachments/assets/38a74f2f-34db-45cf-a603-28feb53e6e0d" />
+
+
 ![Sau khi hiện lại, cùng ID](images/che_3_sau.png)
+<img width="1360" height="686" alt="image" src="https://github.com/user-attachments/assets/77754ea5-8f0f-48a9-8b90-7110a4cb2fe4" />
+
 
 ## 4. Tự review ID (CP3)
 
@@ -88,17 +98,17 @@ Tổng hợp số lỗi theo loại:
 
 Lỗi nào chỉ lượt 2 (theo cảnh) mới thấy, lượt 1 (theo người) không thấy? Vì sao?
 
-...
++ đã kiểm hai lượt, không lỗi
 
 ## 5. File xuất và kết quả tự kiểm (CP4)
 
 | Kiểm tra | Kết quả |
 |---|---|
-| Tên file MOT 1.1 | |
-| Tên file CVAT for video 1.1 | |
-| Số track ID khác nhau trong `gt/gt.txt` (phải là 5) | |
-| Frame `outside` không có dòng trong `gt.txt` (đúng / sai) | |
-| Job đã completed trên CVAT máy cá nhân | |
+| Tên file MOT 1.1 | NguyenNgocDong_mot.zip |
+| Tên file CVAT for video 1.1 | NguyenNgocDong_cvat_video.zip |
+| Số track ID khác nhau trong `gt/gt.txt` (phải là 5) | 5 |
+| Frame `outside` không có dòng trong `gt.txt` (đúng / sai) | đúng |
+| Job đã completed trên CVAT máy cá nhân | đúng |
 
 Dán phần tóm tắt in ra từ `src/check_submission.py`:
 
